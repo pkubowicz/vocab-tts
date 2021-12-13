@@ -1,0 +1,13 @@
+name: Run tests
+on: push
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: sudo apt update; sudo apt install zsh
+      - run: ./test.sh
