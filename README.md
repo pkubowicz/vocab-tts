@@ -6,6 +6,11 @@ Using SSML-compatible reader:
 ./ssml.sh to1000 | xclip
 ```
 
+Using MacOS `say`:
+```
+./mac.sh to1000 Luca
+```
+
 Using Mary TTS:
 
 ```
