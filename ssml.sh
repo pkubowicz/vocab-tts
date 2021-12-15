@@ -9,7 +9,8 @@ show_help () {
 [[ "$1" == "--help" ]] && show_help
 
 WORKDIR=$(dirname $0)
-JS="$WORKDIR/$1.js"
+JS="$WORKDIR/$1"
+[[ ! $JS =~ "\.js$" ]] && JS="$JS.js"
 [[ ! -f $JS ]] && show_help
 
 SPEECH=$(node $JS)
