@@ -17,6 +17,17 @@ function randn_bm(min, max, skew) {
   return num
 }
 
-const years = Array(5).fill(0).map(() => Math.floor(randn_bm(1880, 2060, 0.6)))
+function generate() {
+  return Math.floor(randn_bm(1880, 2060, 0.6))
+}
+
+const years = []
+for (let i=0; i<5; ++i) {
+  let next
+  do {
+    next = generate()
+  } while (years.includes(next))
+  years.push(next)
+}
 
 console.log(`3, 2, 1.\n\n` + years.map(y => `<say-as interpret-as="date" format="y">${y}</say-as>`).join(`<break time="2s"/>`))
