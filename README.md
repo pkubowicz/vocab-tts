@@ -30,7 +30,8 @@ node to1000.js | sed 's/<[^>]*>/ /g' | tee /dev/stderr | xclip
 - `tel-fast` – telephone number, spoken fast
 - `tel-zh`– telephone number, in Mandarin
 - `to1000` – numbers between 11 and 999
-- `year` - years between 1880 and 2030
+- `year` - years between 1880 and 2060, skewed towards recent years
+- `year-uni` - years between 1880 and 2060, uniform distribution
 - `zh` – numbers between 11 and 91
 
 ### SSML
