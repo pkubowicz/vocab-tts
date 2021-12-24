@@ -21,7 +21,7 @@ Using Mary TTS:
 Using own TTS:
 
 ```
-node to1000.js | sed 's/<[^>]*>//g' | tee /dev/stderr | xclip
+node to1000.js | sed 's/<[^>]*>/ /g' | tee /dev/stderr | xclip
 ```
 
 ### Exercises

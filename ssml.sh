@@ -14,5 +14,5 @@ JS="$WORKDIR/$1"
 [[ ! -f $JS ]] && show_help
 
 SPEECH=$(node $JS)
-echo $SPEECH | sed 's/<[^>]*>//g' > /dev/stderr
+echo $SPEECH | sed 's/<[^>]*>/ /g' > /dev/stderr
 echo -n $SPEECH

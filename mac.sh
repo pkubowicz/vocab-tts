@@ -15,6 +15,6 @@ JS="$WORKDIR/$1"
 
 VOICE=$2
 
-SPEECH=$(node $JS | sed 's/<[^>]*>//g')
+SPEECH=$(node $JS | sed 's/<[^>]*>/ /g')
 echo $SPEECH > /dev/stderr
 echo $SPEECH | say -v $VOICE -f -
