@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
 show_help () {
-    echo "Usage: ./ssml.sh [ tel | tel-fast | tel-zh | to1000 | year | zh ] [ voice ]" >&2
-    exit 0
+	echo "Usage: ./ssml.sh [ tel | tel-fast | tel-zh | to1000 | year | zh ] [ voice ]" >&2
+	exit 0
 }
 
 [[ -z "$1" ]] && show_help
