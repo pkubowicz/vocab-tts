@@ -46,7 +46,7 @@ Spec:
 
 ## Using Anki deck
 
-Anki: File > Export, Notes as plain text, just 1 deck, no tags, no HTML
+Anki: File > Export, Notes as plain text, just 1 deck,, no HTML no tags, add note type.
 
 Training listening:
 
