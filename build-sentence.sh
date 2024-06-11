@@ -8,5 +8,5 @@ TYPE="Zh"
 awk 'BEGIN { FS = "\t" } /^'"$TYPE"'/{print $3}' \
 	| sed -e '/^$/ d' -e '/^.$/ d' \
 	| shuf \
-	| head -25 \
+	| head -n $LIMIT \
 	| sort
